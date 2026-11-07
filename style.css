@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    color: #ffff;
+}
+
+body{
+    background-color: #001;
+    display: flex;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px #ffff solid;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    right: 6px;
+}
+
+.image img{
+    width: 100%;
+}
+
+
+.menu{
+    height: auto;
+    width: 40px;
+    background-color: #123;
+    padding: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+    border: solid 3px white;
+}
+
+.menu:hover{
+    width: 250px;
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+    height: 100%;
+}
+
+.menu ul a{
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 15px 0 20px 0;
+}
+
+.menu ul a:hover, .log-out a:hover, .data-info .box:hover, table td:hover{
+    background-color: #ffffff55;
+}
+
+.menu ul a i{
+    font-size: 30px;
+}
+
+.menu .log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu .log-out a{
+    background-color: #a11;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.menu .log-out i{
+    font-size: 18px;
+}
+
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    background-color: #0080ff;
+    border-radius: 8px;
+}
+
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.data-info .box {
+    flex-basis: 49%;
+    flex-grow: 1;
+    height: 100px;
+    background-color: #123;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .5s;
+}
+
+.data-info .box i{
+    font-size: 30px;
+}
+
+.data-info .box .data{
+    text-align: center;
+    line-height: 21px;
+    font-size: 18px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 10px;
+    border-radius: 10px;
+}
+
+table th{
+    background-color: #0080ff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+table td{
+    background-color: #123;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px; 
+    transition: .5s;
+}
+
+.price{
+    background-color: #ffd900d0;
+}
+
+.count{
+    background-color: rgba(106, 21, 9, 0.865);
+}
